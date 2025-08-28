@@ -1,0 +1,21 @@
+Number,First_Name,Last_Name,Email,Department,Location,Job_Title,Sex
+1,Nonso,Chiagunye,NonsoChiagunye@ownkit.com,Engineering,UAE,CTO,Male
+2,Herbert,Ije,HerbertIje@ownkit.com,Engineering,UAE,CISO,Male
+3,Song,Ozidi,SongOzidi@ownkit.com,Engineering,UAE,Snr. Software Engineer,Male
+4,Uche,Mukolo,UcheMukolo@ownkit.com,Engineering,Nigeria,Software Engineer,Female
+5,John,Alieta,JohnAlieta@ownkit.com,Engineering,Nigeria,Security Analyst,Male
+6,Anthony,Ozobu,AnthonyOzobu@ownkit.com,Engineering,UK,DevOps Engineer,Male
+7,Ifeoma,Atuche,IfeomaAtuche@ownkit.com,Sales and Marketing,UAE,Sales Director,Female
+8,Tope,Tunde,TopeTunde@ownkit.com,Sales and Marketing,UK,Marketing Team Lead,Female
+9,Chinedu,Ankra,ChineduAnkra@ownkit.com,Sales and Marketing,UK,Business Development Associate,Male
+10,Ester,Aluso,EsterAluso@ownkit.com,Sales and Marketing,Nigeria,Sales Executive,Female
+11,Micheal,Ajashi,MichealAjashi@ownkit.com,Sales and Marketing,UAE,Sales Executive,Male
+12,Green,Branda,GreenBranda@ownkit.com,Sales and Marketing,UK,Marketing Executive,Female
+13,Leko,Osapa,LekoOsapa@ownkit.com,Sales and Marketing,Nigeria,Marketing Executive,Female
+14,Alego,Carman,AlegoCarman@ownkit.com,Customer Support,UAE,"Head, Customer Support",Male
+15,Jire,Endogan,JireEndogan@ownkit.com,Customer Support,UK,"Manager, Professional Services",Female
+16,David,Alimosho,DavidAlimosho@ownkit.com,Customer Support,UAE,Customer Support Executive,Male
+17,Mire,Andoni,MireAndoni@ownkit.com,Customer Support,Nigeria,Customer Support Executive,Female
+18,Ziv,Jese,ZivJese@ownkit.com,Customer Support,UK,Customer Support Executive,Male
+19,Tochi,Eldema,TochiEldema@ownkit.com,Customer Support,UAE,Customer Support Executive,Male
+20,Judith,Ayerimi,JudithAyerimi@ownkit.com,Customer Support,Nigeria,Customer Support Executive,Female
