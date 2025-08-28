@@ -15,11 +15,11 @@ Ownkit.com is a home lab infrastructure that simulates a secure enterprise netwo
 - Firewall/Router: pfSense
 - Switches: Hyper-V Virtual Switch
 - IPS/IDS: snort
-- Access Control: microsoft Active Directory
+- Access Control: Microsoft Active Directory
 - Domain Controller, DNS and Certificate Server: Windows Server 2019 (Evaluation)
-- Web Server: Windows Server 2019
+- Web Server: Windows Server 2019 (Evaluation)
 - WAF: ModSecurity with OWASP Corerulesets
-- WAF vHost: Rocky Linux 9.6
+- WAF VM: Rocky Linux 9.6
 - SIEM: Wazuh
 
 ### Architecture Highlight

@@ -1,3 +1,5 @@
+.ipynb_checkpoints 
+anaconda_projects
 archi-diagram.svg
 diag-new.png 
 draw.txt
@@ -5,3 +7,5 @@ network_architecture.svg
 network_diagram.png 
 new.svg 
 README.ipynb 
+WAN-pfSense-snort/WAN-Setup.ipynb 
+WAN-pfSense-snort/.ipynb_checkpoints 
