@@ -27,7 +27,7 @@
 - Visit netgate to download the .iso installer https://www.pfsense.org/download/
 - You will download a zipped file netgate-installer-amd64.iso.gz.
 - Unzip with;
-```
+```bash
 gunzip netgate-installer-amd64.iso.gz
 ```
 
