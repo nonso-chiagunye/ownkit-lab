@@ -201,3 +201,23 @@ All the above setup can be done automatically using the included PowerShell scri
 - We will change these DNS settings latter when we setup the Apache/ModSecurity reverse proxy. For now, this is for testing purposes
 
 ![dns.png](e9c42b99-7078-479e-915a-12f245139725.png)
+
+**To Deploy this test application on your Windows Web Server;**
+- Install git
+```PowerShell
+# Clone this repo
+cd $env:USERPROFILE
+git clone https://github.com/nonso-chiagunye/ownkit-lab.git 
+
+# Remove all files from wwwroot
+Remove-Item -Path "C:\inetpub\wwwroot\*" -Recurse -Force
+
+# Copy the application files into wwwroot
+Copy-Item -Path "$env:USERPROFILE\ownkit-lab\LAN1-DC-IIS\ownkit-bank\*" -Destination "C:\inetpub\wwwroot\" -Recurse -Force
+```
+
+**Login with these username and PIN combinations;**
+- nc:1111
+- km:2222
+- ag:3333
+- ar:4444
