@@ -54,7 +54,7 @@ LAN1 is the interface hosting the actual protected workloads - Directory and Dom
 **Setup DHCP**
 - It is important to enable DHCP before deploying the servers, so they can get an automatic IP to go to internet and download packages necessary for OS installation. After deploying all the servers and assigning them static IPs, you can disable DHCP on pfSense
 - Go to Services > DHCP Server
-- Under General Settings, check "Enable DHCP Server on LAN1 (or whatever is your interface name"
+- Under General Settings, check "Enable DHCP Server on LAN1 (or whatever is your interface name")
 - Under Primary Address Pool
   - Subnet: 192.168.1.0/24
   - Subnet Range: 192.168.1.1 - 192.168.1.254
@@ -106,7 +106,11 @@ LAN1 is the interface hosting the actual protected workloads - Directory and Dom
 - To create users, right-click ownkit.com > New > User
 
 - Test user login by joining a client machine to the domain and login with one of users created
-- Test DNS setup by running **nslookup ownkit.com** on PowerShell. This should resolve to 192.168.1.10
+- Test DNS setup
+```PowerShell
+ nslookup ownkit.com
+ # This should resolve to 192.168.1.10
+ ```
 
 All the above setup can be done automatically using the included PowerShell script. 
 
@@ -178,7 +182,11 @@ All the above setup can be done automatically using the included PowerShell scri
 - Save the request to a file eg request.txt
 
 **Submit the Request to DC01**
-- On Dc01, open command prompt and run **certreq -submit -attrib "CertificateTemplate:WebServerCustom" C:\path\to\request.txt C:\signed.cer** (Replace C:\path\to with path where you placed request.txt)
+- On Dc01, open command prompt and run;
+```PowerShell
+ certreq -submit -attrib "CertificateTemplate:WebServerCustom" C:\path\to\request.txt C:\signed.cer
+ # Replace C:\path\to with path where you placed request.txt
+ ```
 - Copy signed.cer to server01
 
 **Install the signed certificate on server01**
@@ -190,7 +198,10 @@ All the above setup can be done automatically using the included PowerShell scri
 - Still on IIS Manager, Navigate to Sites > Default Web Site
 - Right-click Default Web Site > Edit Bindings > Select the https binding (port 443) and click Edit
 - Select SSL certificate: Choose www.ownkit.com (the friendly name of the certificate) > click Ok and close
-- Restart IIS with command **iisreset**
+- Restart IIS with command;
+```PowerShell
+iisreset
+```
 
 ![site-bind.png](ed39efb4-eb8a-470e-a1e7-8c7c9a5a828f.png)
 
