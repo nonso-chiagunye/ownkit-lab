@@ -273,6 +273,33 @@ Alias /errors /var/www/html/errors
 </IfModule>
 ```
 
+**Enable Apache Proxy Modules**
+- Ensure proxy modules are uncommented
+```bash
+sudo nano /etc/httpd/conf.modules.d/00-proxy.conf
+```
+- The configuration should look like this at the end
+```conf
+# This file configures all the proxy modules:
+LoadModule proxy_module modules/mod_proxy.so
+LoadModule lbmethod_bybusyness_module modules/mod_lbmethod_bybusyness.so
+LoadModule lbmethod_byrequests_module modules/mod_lbmethod_byrequests.so
+LoadModule lbmethod_bytraffic_module modules/mod_lbmethod_bytraffic.so
+LoadModule lbmethod_heartbeat_module modules/mod_lbmethod_heartbeat.so
+LoadModule proxy_ajp_module modules/mod_proxy_ajp.so
+LoadModule proxy_balancer_module modules/mod_proxy_balancer.so
+LoadModule proxy_connect_module modules/mod_proxy_connect.so
+LoadModule proxy_express_module modules/mod_proxy_express.so
+LoadModule proxy_fcgi_module modules/mod_proxy_fcgi.so
+LoadModule proxy_fdpass_module modules/mod_proxy_fdpass.so
+LoadModule proxy_ftp_module modules/mod_proxy_ftp.so
+LoadModule proxy_http_module modules/mod_proxy_http.so
+LoadModule proxy_hcheck_module modules/mod_proxy_hcheck.so
+LoadModule proxy_scgi_module modules/mod_proxy_scgi.so
+LoadModule proxy_uwsgi_module modules/mod_proxy_uwsgi.so
+LoadModule proxy_wstunnel_module modules/mod_proxy_wstunnel.so
+```
+
 **Backup and Disable the Default SSL Config to force Apache use your certificates**
 ```bash
 sudo cp /etc/httpd/conf.d/ssl.conf /etc/httpd/conf.d/ssl.conf.bak
