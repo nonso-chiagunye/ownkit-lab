@@ -26,7 +26,10 @@
 **Download and Unzip**
 - Visit netgate to download the .iso installer https://www.pfsense.org/download/
 - You will download a zipped file netgate-installer-amd64.iso.gz.
-- Unzip with **$ gunzip netgate-installer-amd64.iso.gz**
+- Unzip with;
+```
+gunzip netgate-installer-amd64.iso.gz
+```
 
 **Install on VM**
 - Open Hyper-V Manager
