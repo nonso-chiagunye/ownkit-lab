@@ -1,7 +1,7 @@
 # Install Rocky Linux, Apache in Reverse Proxy Mode, ModSecurity and OWASP Core Ruleset on LAN2
 
 ## Download and Install Rocky Linux
-- Click [here](LAN1-DC-IIS/README.md) on steps to create internal v-Switch and configure on pfSense (Name the switch LAN2, assign IP 10.10.1.0/24)
+- Click [here](../LAN1-DC-IIS/README.md) on steps to create internal v-Switch and configure on pfSense (Name the switch LAN2, assign IP 10.10.1.0/24)
 - Visit [here](https://rockylinux.org/download) to download Rocky Linux 9.6 
 - Open Hyper-V Manager. Right-side under "Actions", New > Virtual Machine > Next
 - Under Name, give a name (like modsec) > Generation 1 > Startup memory (4096 MB can do) > Under Connection, ensure you select LAN2 you created earlier > HDD location, you can leave default > Install an OS from a bootable CD/DVD (browse to where you downloaded the Rocky Linux .iso) > Review and Finish
